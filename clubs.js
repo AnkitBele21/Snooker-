@@ -18,8 +18,9 @@ function fetchClubsData() {
             console.log('No data found.');
         }
     }, function(reason) {
-        console.error('error: ' + (reason.result ? reason.result.error.message : 'Unknown error'));
-    });
+    console.error('Google Sheets API error', reason);
+});
+
 }
 
 function appendClubs(clubs) {
