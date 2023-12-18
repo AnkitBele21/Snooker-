@@ -1,29 +1,19 @@
-/* Add your existing styles here */
-
 .logo {
     width: 180px; /* Adjust as needed */
     display: block;
     margin: 0 auto;
-    padding: 10px;
-}
-
-.club-list {
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
 }
 
 .club {
-    margin: 10px;
+    margin-bottom: 15px;
     text-align: center;
-    width: 200px; /* Adjust as needed */
 }
 
 .club img {
     width: 100%;
     height: auto;
     border-radius: 10px;
+    max-width: 200px; /* Adjust as needed */
 }
 
 .club a {
@@ -36,5 +26,3 @@
 .club a:hover {
     text-decoration: underline;
 }
-
-/* Add any additional styles as needed */
