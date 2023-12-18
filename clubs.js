@@ -33,13 +33,25 @@ function appendClubs(clubs) {
     const clubListSection = document.querySelector('.club-list');
     clubs.forEach(function(club, index) {
         if (index === 0) return; // Skip header row if your sheet has one
-        const clubDiv = document.createElement('div');
-        clubDiv.className = 'club';
-        clubDiv.innerHTML = `
-            <img src="${club[3]}" alt="${club[0]}">
-            <a href="#">${club[0]}</a>
+
+        const clubCol = document.createElement('div');
+        clubCol.className = 'col-lg-4 col-md-6 mb-4'; // Bootstrap grid column
+
+        const clubCard = document.createElement('div');
+        clubCard.className = 'card h-100';
+
+        const imageUrl = club[3] ? club[3] : 'placeholder-image.jpg'; // Replace with a default image path if needed
+
+        clubCard.innerHTML = `
+            <img src="${imageUrl}" class="card-img-top" alt="${club[0]}">
+            <div class="card-body">
+                <h5 class="card-title">${club[0]}</h5>
+                <a href="#" class="btn btn-primary">More Info</a>
+            </div>
         `;
-        clubListSection.appendChild(clubDiv);
+
+        clubCol.appendChild(clubCard);
+        clubListSection.appendChild(clubCol);
     });
 }
 
