@@ -32,7 +32,7 @@ function fetchClubsData() {
 function appendClubs(clubs) {
     const clubListSection = document.querySelector('.club-list');
     clubs.forEach(function(club, index) {
-        if (index === 0) return;
+        if (index === 0) return; // Skip header row if your sheet has one
         const clubDiv = document.createElement('div');
         clubDiv.className = 'club';
         clubDiv.innerHTML = `
