@@ -1,6 +1,6 @@
 const apiKey = 'AIzaSyCfxg14LyZ1hrs18WHUuGOnSaJ_IJEtDQc';
 const sheetId = '1MdV4NpeuadDczDGOS7peYTFk7P3NGeZJQo20GzEjQtc';
-const range = 'A:D'; // Adjust if your data is in different columns
+const range = 'clubs!A:D'; // Adjust the range to target the 'clubs' sheet
 
 function fetchClubsData() {
     gapi.client.init({
@@ -18,7 +18,7 @@ function fetchClubsData() {
             console.log('No data found.');
         }
     }, function(reason) {
-        console.error('error: ' + reason.result.error.message);
+        console.error('error: ' + (reason.result ? reason.result.error.message : 'Unknown error'));
     });
 }
 
