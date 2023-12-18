@@ -1,6 +1,6 @@
 const apiKey = 'AIzaSyCfxg14LyZ1hrs18WHUuGOnSaJ_IJEtDQc';
 const sheetId = '1MdV4NpeuadDczDGOS7peYTFk7P3NGeZJQo20GzEjQtc';
-const range = 'clubs!A2:B2'; // Adjust the range to target the 'clubs' sheet
+const range = 'clubs!A:D'; // Adjust the range to target the 'clubs' sheet
 
 function fetchClubsData() {
     gapi.client.init({
