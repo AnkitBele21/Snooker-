@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Snooker Plus</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://apis.google.com/js/api.js"></script>
 </head>
 <body>
     <header>
@@ -13,7 +14,15 @@
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About Us</a></li>
-                <!-- Add other navigation links here -->
+                <li>
+                    <button id="partnerClubsBtn">Partner Clubs</button>
+                    <div id="partnerClubsDropdown" class="dropdown-content">
+                        <!-- Club names will be populated here -->
+                    </div>
+                </li>
+                <li><a href="player_login.html">Player Login</a></li>
+                <li><a href="leaderboard.html">Snookerplus Leaderboard</a></li>
+                <li><a href="investment.html">Investment in Snooker+ Studios</a></li>
             </ul>
         </nav>
     </header>
@@ -30,5 +39,7 @@
         <p>Contact us: info@snookerplus.com</p>
         <!-- Add other footer elements here -->
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
