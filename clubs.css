@@ -1,3 +1,12 @@
+/* Add your existing styles here */
+
+.logo {
+    width: 180px; /* Adjust as needed */
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+}
+
 .club-list {
     padding: 20px;
     display: flex;
@@ -8,18 +17,19 @@
 .club {
     margin: 10px;
     text-align: center;
+    width: 200px; /* Adjust as needed */
 }
 
 .club img {
-    width: 100%; /* Adjust as needed */
+    width: 100%;
     height: auto;
-    border-radius: 10px; /* Optional */
+    border-radius: 10px;
 }
 
 .club a {
     display: block;
     margin-top: 8px;
-    color: #01AB7A; /* Theme color */
+    color: #01AB7A;
     text-decoration: none;
 }
 
@@ -27,4 +37,4 @@
     text-decoration: underline;
 }
 
-/* Additional styles... */
+/* Add any additional styles as needed */
