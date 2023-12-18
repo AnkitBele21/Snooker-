@@ -23,4 +23,27 @@
     color: #333; /* Card title color */
 }
 
-/* Add any additional styles as needed */
+/* ... (other styles) ... */
+
+.card-body {
+    background-color: #fff; /* Light background for the card body */
+    padding: 15px;
+}
+
+.card-title {
+    color: #333; /* Dark color for text */
+    font-size: 1.1em; /* Slightly larger font size */
+    margin-bottom: 10px;
+}
+
+.card-title a {
+    color: #007bff; /* Bootstrap primary color for links */
+    text-decoration: none; /* Removes underline from links */
+}
+
+.card-title a:hover {
+    color: #0056b3; /* Darker shade for hover effect */
+    text-decoration: underline; /* Adds underline on hover */
+}
+
+/* ... (additional styles) ... */
