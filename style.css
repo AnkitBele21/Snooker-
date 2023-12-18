@@ -56,3 +56,35 @@ footer {
     position: relative;
     width: 100%;
 }
+/* Existing styles... */
+
+.club-list {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.club {
+    margin: 10px;
+    text-align: center;
+}
+
+.club img {
+    width: 100%; /* Adjust as needed */
+    height: auto;
+    border-radius: 10px; /* Optional */
+}
+
+.club a {
+    display: block;
+    margin-top: 8px;
+    color: #01AB7A; /* Theme color */
+    text-decoration: none;
+}
+
+.club a:hover {
+    text-decoration: underline;
+}
+
+/* Additional styles... */
