@@ -1,4 +1,4 @@
-const apiKey = 'AIzaSyCfxg14LyZ1hrs18WHUuGOnSaJ_IJEtDQc';
+const apiKey = 'AIzaSyDVRV0kt-4XTP5F7IVkpqwXRhkMek2IVBE';
 const sheetId = '1MdV4NpeuadDczDGOS7peYTFk7P3NGeZJQo20GzEjQtc';
 const range = 'A:A'; // Assuming you want to fetch all data from column A
 
