@@ -1,15 +1,22 @@
 const apiKey = 'AIzaSyDVRV0kt-4XTP5F7IVkpqwXRhkMek2IVBE';
 const sheetId = '1H-1RYuhUos-jz7OBJyr5fqvICOI9AOOaZKgcH-phSPU';
-const range = 'clubs!A:D'; // Adjust the range to target the 'clubs' sheet
+const range = 'clubs!A:D';
 
-function fetchClubsData() {
+function initClient() {
     gapi.client.init({
         'apiKey': apiKey,
+        'discoveryDocs': ["https://sheets.googleapis.com/$discovery/rest?version=v4"],
     }).then(function() {
-        return gapi.client.sheets.spreadsheets.values.get({
-            spreadsheetId: sheetId,
-            range: range,
-        });
+        fetchClubsData();
+    }, function(error) {
+        console.error('Error initializing Google API client', error);
+    });
+}
+
+function fetchClubsData() {
+    gapi.client.sheets.spreadsheets.values.get({
+        spreadsheetId: sheetId,
+        range: range,
     }).then(function(response) {
         var clubs = response.result.values;
         if (clubs.length > 0) {
@@ -18,15 +25,14 @@ function fetchClubsData() {
             console.log('No data found.');
         }
     }, function(reason) {
-    console.error('Google Sheets API error', reason);
-});
-
+        console.error('Google Sheets API error', reason);
+    });
 }
 
 function appendClubs(clubs) {
     const clubListSection = document.querySelector('.club-list');
     clubs.forEach(function(club, index) {
-        if (index === 0) return; // Skip header row if your sheet has one
+        if (index === 0) return;
         const clubDiv = document.createElement('div');
         clubDiv.className = 'club';
         clubDiv.innerHTML = `
@@ -37,4 +43,4 @@ function appendClubs(clubs) {
     });
 }
 
-gapi.load('client', fetchClubsData);
+gapi.load('client', initClient);
