@@ -4,25 +4,23 @@
     margin: 0 auto;
 }
 
-.club {
-    margin-bottom: 15px;
-    text-align: center;
-}
-
-.club img {
+.card-img-top {
     width: 100%;
-    height: auto;
-    border-radius: 10px;
-    max-width: 200px; /* Adjust as needed */
+    height: 200px; /* Fixed height for images */
+    object-fit: cover; /* Ensures images cover the area nicely */
 }
 
-.club a {
-    display: block;
-    margin-top: 8px;
-    color: #01AB7A;
-    text-decoration: none;
+.card {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Adds a subtle shadow to cards */
+    transition: transform 0.3s ease;
 }
 
-.club a:hover {
-    text-decoration: underline;
+.card:hover {
+    transform: scale(1.05); /* Slightly enlarges the card on hover */
 }
+
+.card-title {
+    color: #333; /* Card title color */
+}
+
+/* Add any additional styles as needed */
