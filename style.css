@@ -1,23 +1,32 @@
 body {
-    font-family: Arial, sans-serif;
+    background-color: #22252B;
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
+    background-color: #33363B;
+    padding: 20px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    width: 180px;
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
+    display: flex;
+    align-items: center;
 }
 
 nav ul li {
-    display: inline;
     margin: 0 10px;
 }
 
@@ -25,12 +34,13 @@ nav ul li a {
     color: white;
     text-decoration: none;
     padding: 5px 10px;
-    background-color: #007bff;
+    background-color: #01AB7A;
     border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
 nav ul li a:hover {
-    background-color: #0056b3;
+    background-color: #018a5e;
 }
 
 #hero {
@@ -39,11 +49,10 @@ nav ul li a:hover {
 }
 
 footer {
-    background-color: #333;
+    background-color: #33363B;
     color: white;
     text-align: center;
     padding: 20px 0;
-    position: absolute;
-    bottom: 0;
+    position: relative;
     width: 100%;
 }
