@@ -44,8 +44,21 @@ nav ul li a:hover {
 }
 
 #hero {
+    background-image: url('https://github.com/AnkitBele21/centurydewas/blob/main/photo/stock-photo-opening-frame-of-the-snooker-77557717-ZSbCgl2Ur-transformed.png?raw=true');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
     text-align: center;
-    padding: 50px 20px;
+}
+
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
 }
 
 footer {
@@ -56,6 +69,3 @@ footer {
     position: relative;
     width: 100%;
 }
-/* Existing styles... */
-
-
