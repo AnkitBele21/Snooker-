@@ -3,63 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Snooker History</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background: linear-gradient(0deg, #22252B 0%, #22252B 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%);
-            font-family: 'Quicksand', sans-serif;
-        }
-        .container {
-            width: 1920px;
-            height: 1080px;
-            position: relative;
-        }
-        .image-text-combo {
-            width: 949.71px;
-            position: absolute;
-            left: 496px;
-            top: 468px;
-            display: flex;
-            align-items: center;
-            gap: 6px;
-        }
-        .image-text-combo img {
-            /* Add specific styles for images if needed */
-        }
-        .text-block {
-            width: 1535px;
-            height: 140px;
-            position: absolute;
-            left: 193px;
-            top: 909px;
-            text-align: center;
-            color: white;
-            font-size: 50px;
-            font-weight: 500;
-            text-transform: capitalize;
-            word-wrap: break-word;
-        }
-        .text-block span {
-            display: block;
-        }
-        .text-block span.strong {
-            font-weight: 700;
-        }
-    </style>
+    <title>Snooker Plus</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="image-text-combo">
-            <!-- Add your images here -->
-            <img src="https://via.placeholder.com/118x119" alt="Image Description">
-            <!-- Additional images and elements as per your design -->
+    <header>
+        <img src="https://img1.wsimg.com/isteam/ip/9e11a5db-9940-4d56-b773-7f8426617dc8/Frame%2012995%20(1).png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25" alt="Snooker Plus Logo">
+        <nav>
+            <ul>
+                <li><a href="leaderboard.html">Leaderboard</a></li>
+                <li><a href="clubs.html">Clubs</a></li>
+                <li><a href="player_login.html">Player Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Welcome to Snooker Plus</h1>
+            <p>The Modern Snooker Community.</p>
+            <button>Join Now</button>
         </div>
-        <div class="text-block">
-            <span>Snooker, invented by Neville Chamberlain, British Army in the </span>
-            <span class="strong">Indian town of Jabalpur. 1875</span>
-        </div>
-    </div>
+    </section>
+
+    <!-- Add other sections like About, Features, Testimonials here -->
+
+    <footer>
+        <p>Contact us: info@snookerplus.com</p>
+        <!-- Add other footer elements here -->
+    </footer>
 </body>
 </html>
